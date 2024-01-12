@@ -1,8 +1,35 @@
 <html>
-<head></head>
+    <head>
+        <style>
+.main-map {
+    width: 100%;
+    height: 1200px;
+    background: url(https://raw.githubusercontent.com/jcembrano21/rxseats/main/Bldg%20H%20Floor%20Plan%201.jpg);}
+div#seat1 {
+    position: absolute;
+    width: 70px;
+    background: #c0ffdf85;
+    height: 70px;
+    border: 1px solid #000;
+    top: 510px;
+    left: 240px;}
+div#seat1:hover:after {
+    content: 'SEAT #450';
+    display: block;
+    border: 1px solid red;
+    background: green;
+    font-weight: 600;
+    color: #fff;
+    width: 100%;}
+        </style>
+    </head>
 <body>
 
     Hello RX Peeps
-  
-</body>
-</html>
+
+    <div class="main-map">
+        <div id="seat1"></div>
+    </div>
+
+
+</body></html>
